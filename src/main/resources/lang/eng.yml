@@ -1,0 +1,14 @@
+language:
+  LANGUAGE_SUCCESSFULLY_LOADED: "English language successfully loaded"
+  PLUGIN_STRING: "§6[SMI]§f "
+
+  #Commands
+  SEARCH_DESC: "Search a player's inventory"
+  PLAYER_NOT_FOUND: "§cPlayer not found"
+  INVITATION_SENT: "§fInvitation sent to {0}"
+  INVITATION_RECEIVED: "§f{0} wants to inspect your inventory"
+  INVITATION_ACCEPTED: "§fYou accepted {0} request"
+  CLICK_TO_ACCEPT: "§aClick here to accept"
+  INVALID_ARGUMENTS: "§cInvalid arguments"
+  NO_INVITATION: "§cYou have no pending invitations from {0}"
+  TARGET_TOO_FAR: "§cYou are too far from {0}."

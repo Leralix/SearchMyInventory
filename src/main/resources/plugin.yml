@@ -1,0 +1,9 @@
+name: SearchMyInventory
+version: '${version}'
+main: org.leralix.searchmyinventory.SearchMyInventory
+api-version: '1.20'
+commands:
+  search:
+    description: base command of SearchMyInventory
+    permission: searchmyinventory.base
+    usage: /<command>
