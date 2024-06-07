@@ -5,6 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.leralix.searchmyinventory.Lang.Lang;
 import org.leralix.searchmyinventory.commands.CommandManager;
 import org.leralix.searchmyinventory.util.ConfigUtil;
+import org.leralix.searchmyinventory.util.sound.SoundStorage;
 
 import java.util.logging.Logger;
 
@@ -31,6 +32,14 @@ public final class SearchMyInventory extends JavaPlugin {
         Lang.loadTranslations(lang + ".yml");
 
         getCommand("search").setExecutor(new CommandManager());
+
+        logger.info("[SMI] -Loading Config");
+
+        ConfigUtil.saveAndUpdateResource("config.yml");
+        ConfigUtil.loadCustomConfig("config.yml");
+
+        SoundStorage.init();
+
 
         logger.info("[SMI] -Plugin Loaded");
 

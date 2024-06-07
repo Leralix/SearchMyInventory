@@ -1,0 +1,23 @@
+#_____                     _                         _____                      _
+#/ ____|                   | |                       |_   _|                    | |
+#| (___   ___  __ _ _ __ ___| |__    _ __ ___  _   _    | |  _ ____   _____ _ __ | |_ ___  _ __ _   _
+#\___ \ / _ \/ _` | '__/ __| '_ \  | '_ ` _ \| | | |   | | | '_ \ \ / / _ \ '_ \| __/ _ \| '__| | | |
+#____) |  __/ (_| | | | (__| | | | | | | | | | |_| |  _| |_| | | \ V /  __/ | | | || (_) | |  | |_| |
+#|_____/ \___|\__,_|_|  \___|_| |_| |_| |_| |_|\__, | |_____|_| |_|\_/ \___|_| |_|\__\___/|_|   \__, |
+#                                              __/ |                                            __/ |
+#                                             |___/                                            |___/
+
+
+
+# Maximum distance between 2 players to ask for a search
+max_distance: 10
+
+#Manage plugin sounds
+enableSounds: true
+#1 - Sound
+#2 - Volume
+#3 - Pitch
+sounds:
+  INVITATION_SENT: [ "BLOCK_NOTE_BLOCK_HARP", "1", "1" ]
+  INVITATION_RECEIVED: [ "BLOCK_NOTE_BLOCK_HARP", "1", "1" ]
+  INVITATION_ACCEPTED: [ "BLOCK_NOTE_BLOCK_HARP", "1", "2" ]

@@ -6,6 +6,8 @@ import org.leralix.searchmyinventory.Lang.Lang;
 import org.leralix.searchmyinventory.commands.SubCommand;
 import org.leralix.searchmyinventory.gui.InvGUI;
 import org.leralix.searchmyinventory.storage.InvitationStorage;
+import org.leralix.searchmyinventory.util.sound.SoundEnum;
+import org.leralix.searchmyinventory.util.sound.SoundUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,6 +72,8 @@ public class Accept extends SubCommand {
         InvGUI.openInventory(sender, player);
         InvitationStorage.removeInvitation(player, sender);
         player.sendMessage(Lang.INVITATION_ACCEPTED.get(senderName));
+        SoundUtil.playSound(sender, SoundEnum.INVITATION_ACCEPTED);
+        SoundUtil.playSound(player, SoundEnum.INVITATION_ACCEPTED);
     }
 
 }

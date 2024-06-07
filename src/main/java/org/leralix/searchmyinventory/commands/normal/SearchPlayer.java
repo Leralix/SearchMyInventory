@@ -6,7 +6,10 @@ import org.leralix.searchmyinventory.Lang.Lang;
 import org.leralix.searchmyinventory.commands.SubCommand;
 import org.leralix.searchmyinventory.storage.InvitationStorage;
 import org.leralix.searchmyinventory.util.ChatUtil;
+import org.leralix.searchmyinventory.util.ConfigUtil;
 import org.leralix.searchmyinventory.util.PositionUtil;
+import org.leralix.searchmyinventory.util.sound.SoundEnum;
+import org.leralix.searchmyinventory.util.sound.SoundUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,21 +63,26 @@ public class SearchPlayer extends SubCommand {
             return;
         }
 
-
-        if(PositionUtil.getPositionBetween(player, target) > 15){
+        int maxDistance = ConfigUtil.getCustomConfig("config.yml").getInt("maxDistance", 15);
+        if(PositionUtil.getPositionBetween(player, target) > maxDistance){
             player.sendMessage(Lang.TARGET_TOO_FAR.get(target.getName()));
             return;
         }
 
         sendInvitation(target, player);
-        player.sendMessage(Lang.INVITATION_SENT.get(target.getName()));
+
     }
 
     private void sendInvitation(Player target, Player sender) {
 
         InvitationStorage.addInvitation(target, sender);
+
+        sender.sendMessage(Lang.INVITATION_SENT.get(target.getName()));
+        SoundUtil.playSound(sender, SoundEnum.INVITATION_SENT);
+
         target.sendMessage(Lang.INVITATION_RECEIVED.get(sender.getName()));
         ChatUtil.sendClickableCommand(target, Lang.CLICK_TO_ACCEPT.get(), "search accept " + sender.getName());
+        SoundUtil.playSound(target, SoundEnum.INVITATION_RECEIVED);
 
     }
 
