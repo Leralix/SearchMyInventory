@@ -45,3 +45,11 @@ build/
 .idea/gradle.xml
 build/tmp/compileJava/previous-compilation-data.bin
 build/tmp/compileJava/compileTransaction/stash-dir/SearchPlayer.class.uniqueId0
+.gradle/8.5/executionHistory/executionHistory.bin
+.gradle/8.5/executionHistory/executionHistory.lock
+.gradle/8.5/fileHashes/fileHashes.bin
+.gradle/8.5/fileHashes/fileHashes.lock
+.gradle/8.5/fileHashes/resourceHashesCache.bin
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.idea/gradle.xml
+build/tmp/compileJava/previous-compilation-data.bin

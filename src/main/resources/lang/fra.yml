@@ -1,0 +1,13 @@
+language:
+  LANGUAGE_SUCCESSFULLY_LOADED: "Langue Française chargée"
+  PLUGIN_STRING: "§6[SMI]§f "
+  #Commands
+  SEARCH_DESC: "Fouille l'inventaire d'un autre joueur"
+  PLAYER_NOT_FOUND: "§cLe joueur n'a pas été trouvé"
+  INVITATION_SENT: "§Invitation envoyée à {0}"
+  INVITATION_RECEIVED: "§f{0} veut fouiller votre inventaire"
+  INVITATION_ACCEPTED: "§fVous avez accepté la demande de {0}"
+  CLICK_TO_ACCEPT: "§aCliquez ici pour accepter"
+  INVALID_ARGUMENTS: "§cArguments invalides"
+  NO_INVITATION: "§cVous n'avez pas de demandes en attente de {0}"
+  TARGET_TOO_FAR: "§cVous êtes trop loin de {0}."

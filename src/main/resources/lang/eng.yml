@@ -1,7 +1,6 @@
 language:
   LANGUAGE_SUCCESSFULLY_LOADED: "English language successfully loaded"
   PLUGIN_STRING: "§6[SMI]§f "
-
   #Commands
   SEARCH_DESC: "Search a player's inventory"
   PLAYER_NOT_FOUND: "§cPlayer not found"
